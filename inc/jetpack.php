@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package firstbyte
+ * @package
  */
 
 // Exit if accessed directly.
@@ -19,13 +19,13 @@ defined( 'ABSPATH' ) || exit;
 
 if ( defined( 'JETPACK__VERSION' ) ) {
 
-    function firstbyte_jetpack_setup() {
+    function goldphoenix_jetpack_setup() {
         // Add theme support for Infinite Scroll.
         add_theme_support(
             'infinite-scroll',
             array(
                 'container' => 'main',
-                'render'    => 'firstbyte_infinite_scroll_render',
+                'render'    => 'goldphoenix_infinite_scroll_render',
                 'footer'    => 'page',
             )
         );
@@ -38,7 +38,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
             'jetpack-content-options',
             array(
                 'post-details' => array(
-                    'stylesheet' => 'firstbyte-style',
+                    'stylesheet' => '-style',
                     'date'       => '.posted-on',
                     'categories' => '.cat-links',
                     'tags'       => '.tags-links',
@@ -53,12 +53,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
             )
         );
     }
-    add_action( 'after_setup_theme', 'firstbyte_jetpack_setup' );
+    add_action( 'after_setup_theme', 'goldphoenix_jetpack_setup' );
 
     /**
      * Custom render function for Infinite Scroll.
      */
-    function firstbyte_infinite_scroll_render() {
+    function goldphoenix_infinite_scroll_render() {
         while ( have_posts() ) {
             the_post();
             if ( is_search() ) :

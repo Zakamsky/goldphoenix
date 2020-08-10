@@ -7,3 +7,4 @@ node_modules
 .map
 .DS_store
 assets
+!resources/assets

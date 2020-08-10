@@ -8,12 +8,12 @@ defined( 'ABSPATH' ) || exit;
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function firstbyte_widgets_init() {
+function goldphoenix_widgets_init() {
     register_sidebar(
         array(
-            'name'          => esc_html__( 'Sidebar', 'firstbyte' ),
+            'name'          => esc_html__( 'Sidebar', 'goldphoenix' ),
             'id'            => 'sidebar-1',
-            'description'   => esc_html__( 'Add widgets here.', 'firstbyte' ),
+            'description'   => esc_html__( 'Add widgets here.', 'goldphoenix' ),
             'before_widget' => '<section id="%1$s" class="widget %2$s">',
             'after_widget'  => '</section>',
             'before_title'  => '<h2 class="widget-title">',
@@ -21,4 +21,4 @@ function firstbyte_widgets_init() {
         )
     );
 }
-add_action( 'widgets_init', 'firstbyte_widgets_init' );
+add_action( 'widgets_init', 'goldphoenix_widgets_init' );

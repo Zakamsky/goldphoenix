@@ -8,7 +8,7 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package firstbyte
+ * @package
  */
 
 // Exit if accessed directly.
@@ -17,33 +17,33 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses firstbyte_header_style()
+ * @uses goldphoenix_header_style()
  */
-function firstbyte_custom_header_setup() {
+function goldphoenix_custom_header_setup() {
 	add_theme_support(
 		'custom-header',
 		apply_filters(
-			'firstbyte_custom_header_args',
+			'goldphoenix_custom_header_args',
 			array(
 				'default-image'      => '',
 				'default-text-color' => '000000',
 				'width'              => 1000,
 				'height'             => 250,
 				'flex-height'        => true,
-				'wp-head-callback'   => 'firstbyte_header_style',
+				'wp-head-callback'   => 'goldphoenix_header_style',
 			)
 		)
 	);
 }
-add_action( 'after_setup_theme', 'firstbyte_custom_header_setup' );
+add_action( 'after_setup_theme', 'goldphoenix_custom_header_setup' );
 
-if ( ! function_exists( 'firstbyte_header_style' ) ) :
+if ( ! function_exists( 'goldphoenix_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see firstbyte_custom_header_setup().
+	 * @see goldphoenix_custom_header_setup().
 	 */
-	function firstbyte_header_style() {
+	function goldphoenix_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

@@ -4,7 +4,7 @@
 defined( 'ABSPATH' ) || exit;
 
 
-$firstbyte_includes = array(
+$goldphoenix_includes = array(
     '/theme-settings.php',                  // Theme setup and custom theme supports. Initialize theme default settings.
     '/widgets.php',                         // Register widget area.
     '/enqueue.php',                         // Enqueue scripts and styles.
@@ -22,7 +22,7 @@ $firstbyte_includes = array(
 
 );
 
-foreach ( $firstbyte_includes as $file ) {
+foreach ( $goldphoenix_includes as $file ) {
     require_once get_template_directory() . '/inc' . $file;
 }
 /**

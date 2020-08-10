@@ -6,23 +6,23 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package firstbyte
+ * @package
  */
 
 ?>
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'firstbyte' ) ); ?>">
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'goldphoenix' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'firstbyte' ), 'WordPress' );
+				printf( esc_html__( 'Proudly powered by %s', 'goldphoenix' ), 'WordPress' );
 				?>
 			</a>
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'firstbyte' ), 'firstbyte', '<a href="http://underscores.me/">Underscores.me</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'goldphoenix' ), 'goldphoenix', '<a href="http://underscores.me/">Underscores.me</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

@@ -24,7 +24,7 @@ jobs:
 
     - name: Sync
       env:
-        dest: 'gldfenix@gold-phoenix.ru:/public_html/wp-content/themes/goldphoenix/'
+        dest: 'gldfenix@5.180.137.114:/web/gold-phoenix.ru/public_html/wp-content/themes/goldphoenix/'
       run: |
         echo "${{secrets.DEPLOY_KEY}}" > deploy_key
         chmod 600 ./deploy_key

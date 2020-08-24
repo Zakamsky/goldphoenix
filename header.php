@@ -57,3 +57,62 @@
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+    <div class="navbar top-bar navbar-light">
+        <p class="h6 p-1 m-0">+7 987 65 43 210</p>
+        <p class="p-1 m-0">texto por ejemplo</p>
+    </div>
+    <div class="flow-container">
+        <div class="row">
+            <div class="col-md-2 d-flex align-items-center justify-content-center py-3">
+                <img src="https://github.com/Zakamsky/Zakamsky.github.io/blob/master/img/phoenix.png?raw=true" alt="" class="img-logo">
+            </div>
+            <div class="col-md-7 d-flex">
+                <div class="title-block my-auto">
+                    <h1 class="site-title">
+                        Золотой Феникс
+                    </h1>
+                    <p class="h3">
+                        Сайт про феншуй и астрологию
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-md-3 d-flex">
+<!--                <form class="form-inline my-auto">-->
+<!--                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--                    <button class="btn btn-outline-danger   my-2 my-sm-0" type="submit">Search</button>-->
+<!--                </form>-->
+                <?php get_search_form(); ?>
+
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light text-danger">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link text-danger" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-danger dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item text-danger" href="#">Action</a>
+                        <a class="dropdown-item text-danger" href="#">Another action</a>
+                        <a class="dropdown-item text-danger" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>

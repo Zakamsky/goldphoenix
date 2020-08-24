@@ -23,7 +23,7 @@
     "@babel/preset-env": "^7.1.0",
     "autoprefixer": "^9.1.5",
     "babel-loader": "^8.0.4",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.12",
     "cache-loader": "^1.2.2",
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.5.3",
@@ -45,5 +45,8 @@
     "webpack": "^4.20.2",
     "webpack-dev-middleware": "^3.4.0",
     "webpack-hot-middleware": "^2.24.3"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2"
   }
 }

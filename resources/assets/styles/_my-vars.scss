@@ -1,15 +1,21 @@
-$redd: #f83600;
-$orange: #fe8c00;
+$my-orangered: #f83600;
+$my-orange: #fe8c00;
+$my-darkred: #7d1324;
 
-$primary:       $redd;
-$secondary:     $orange;
-$danger:        #7d1324;
+
+
+//bootstrap variables:
+
+$primary:       $my-orangered;
+$secondary:     $my-orange;
+$danger:        $my-darkred;
 
 $input-btn-padding-x:   1em ;
-$input-padding-x:      .75em; //return default
+$input-padding-x:      .75rem; //return default
 $btn-border-radius:           3em;
 $btn-border-radius-lg:        3em;
 $btn-border-radius-sm:        3em;
+
 
 //$border-radius:               .25rem !default;
 //$border-radius-lg:            .3rem !default;

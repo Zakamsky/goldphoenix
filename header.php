@@ -24,6 +24,10 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'goldphoenix' ); ?></a>
+    <div class="navbar top-bar navbar-light bg-maine-gradient">
+        <p class="h6 p-1 m-0">+7 987 65 43 210</p>
+        <p class="p-1 m-0">texto por ejemplo</p>
+    </div>
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
@@ -57,10 +61,7 @@
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
-    <div class="navbar top-bar navbar-light">
-        <p class="h6 p-1 m-0">+7 987 65 43 210</p>
-        <p class="p-1 m-0">texto por ejemplo</p>
-    </div>
+
     <div class="flow-container">
         <div class="row">
             <div class="col-md-2 d-flex align-items-center justify-content-center py-3">

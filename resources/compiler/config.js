@@ -7,7 +7,7 @@ module.exports = {
   devtool: 'cheap-module-eval-source-map',
   outputFolder: '../assets',
   publicFolder: 'assets',
-  proxyTarget: 'https://.elkin.dev',
+  proxyTarget: 'https://gold-phoenix.ru',
   watch: [
     '../**/*.php'
   ]

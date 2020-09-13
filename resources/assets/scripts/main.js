@@ -4,11 +4,12 @@ jQuery( document ).ready(function( $ ) {
 
 // === sticky menu ===
     const headerHeight = $('#site-header').height();
-    const navHeight = $('.sticky-js').height() + 16;
-    const navOffset = headerHeight - navHeight;
+    // const navHeight = $('.sticky-js').height() + 16;
+    // const navOffset = headerHeight - navHeight;
 
     $(window).scroll(function() {
-        if (window.pageYOffset > navOffset){
+        // if (window.pageYOffset > navOffset){
+        if (window.pageYOffset > headerHeight){
             $('.sticky-js').addClass('fixed-top-js')
         } else {
             $('.sticky-js').removeClass('fixed-top-js');
@@ -32,7 +33,7 @@ jQuery( document ).ready(function( $ ) {
     });
 
     $(window).scroll(function() {
-        if (window.pageYOffset > 500){
+        if (window.pageYOffset > 300){
             $('.gototop-js').addClass('show-js')
         } else {
             $('.gototop-js').removeClass('show-js');

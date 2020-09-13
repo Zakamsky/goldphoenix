@@ -12,7 +12,9 @@
   right: 0;
   padding-left: .6rem;
   padding-right: .6rem;
-
+  .dashicons, .dashicons-before:before {
+    vertical-align: text-bottom;
+  }
 }
 .form-search__input{
   padding-right: 40px;

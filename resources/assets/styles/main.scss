@@ -1,5 +1,6 @@
 // abstraction:
 @import "utilities/my-vars";
+@import "utilities/colors_vars";
 @import "utilities/my-mixins";
 @import "utilities/media-mixin";
 @import "utilities/material-bx-shadows";
@@ -14,6 +15,7 @@
 @import "header";
 @import "searchform";
 @import "main-menu";
+@import "footer";
 @import "to-top-btn";
 // custom styles
 @import "custom-styles";

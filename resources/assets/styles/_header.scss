@@ -1,3 +1,4 @@
 .top-bar{
   color: #ffffff;
+  @include BoxShadow(2);
 }

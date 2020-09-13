@@ -4,22 +4,26 @@
   bottom: 1rem;
   right: 1rem;
   background: rgba($white, .5);
-  .dashicons, .dashicons-before:before {
-    line-height: 1;
-    vertical-align: unset;
+
+  &:hover{
+    color: $white;
+  }
+  .triangled-arrow-up{
+    transform: translateY(2px);
   }
 
-  .to-top.show-js{
+  &.show-js{
     display: block;
     animation: showBlock 1s linear forwards;
   }
 
-  @keyframes showBlock {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

@@ -1,5 +1,6 @@
 .main-menu{
   position: relative;
+  @include BoxShadow(4);
   &::before,
   &::after{
     content: '';
@@ -40,5 +41,5 @@
   left: 0;
   right: 0;
   z-index: 999999;
-
+  @include BoxShadow(8);
 }

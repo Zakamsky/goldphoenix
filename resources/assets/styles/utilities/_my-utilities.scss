@@ -4,3 +4,6 @@
 .bg-main-gradient-to-left{
   @include  bg-main-gradient()
 }
+.btn.rounded-circle{
+  padding: 0.5em .78em;
+}

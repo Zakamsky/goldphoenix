@@ -11,6 +11,7 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+        <div class="container">
 
 		<section class="error-404 not-found">
 			<header class="page-header">
@@ -53,6 +54,7 @@ get_header();
 
 			</div><!-- .page-content -->
 		</section><!-- .error-404 -->
+        </div><!--.container-->
 
 	</main><!-- #main -->
 

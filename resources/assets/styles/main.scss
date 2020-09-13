@@ -1,10 +1,19 @@
-@import "my-vars";
-@import "my-mixins";
+// abstraction:
+@import "utilities/my-vars";
+@import "utilities/my-mixins";
+@import "utilities/media-mixin";
+@import "utilities/material-bx-shadows";
+// old and other styles
 @import "old/style";
 @import "old/woocommerce";
-@import "custom-styles";
 @import "bootstrap";
-@import "my-utilities";
+// custom utilities
+@import "utilities/my-utilities";
+@import "utilities/arrows";
+// block styles
 @import "header";
 @import "searchform";
 @import "main-menu";
+@import "to-top-btn";
+// custom styles
+@import "custom-styles";

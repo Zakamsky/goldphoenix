@@ -21,3 +21,24 @@
     text-transform: uppercase;
   }
 }
+
+//for sticky menu:
+
+.site-header{
+  position: relative;
+  padding-bottom: 56px;
+}
+.main-menu{
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: $white;
+}
+.fixed-top-js{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+
+}

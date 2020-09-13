@@ -11,6 +11,7 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+        <div class="container">
 
         <?php custom_breadcrumbs() ?>
 
@@ -34,6 +35,7 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
+        </div><!--.container-->
 
 	</main><!-- #main -->
 

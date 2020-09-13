@@ -26,7 +26,7 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'goldphoenix' ); ?></a>
 
 
-	<header id="masthead" class="site-header">
+	<header id="site-header" class="site-header">
         <div class="navbar top-bar navbar-light bg-main-gradient-to-left">
             <div class="container d-flex">
                 <p class="h6 p-1 m-0">
@@ -67,7 +67,7 @@
 
             </div>
 		</div><!-- .site-branding -->
-        <nav id="main-nav" class="main-menu navbar navbar-expand-lg navbar-primary" aria-labelledby="main-nav-label">
+        <nav id="main-nav" class="main-menu navbar navbar-expand-lg navbar-primary sticky-js" aria-labelledby="main-nav-label">
 
             <h2 id="main-nav-label" class="sr-only">
                 Главна навигация

@@ -1,0 +1,137 @@
+// ==========================================================
+// ========= cusom arrow css icons =========
+// ==========================================================
+//
+// author: Alex Elkin <alex.zakamsky@gmail.com>
+//
+// Example usage:
+//
+// <span class="triangled-arrow-up"></span>
+// <div class="triangled-arrow-down"></div>
+// <div class="triangled-arrow-left"></div>
+// <div class="triangled-arrow-right"></div>
+
+
+
+/* ===== arrow top ===== */
+.triangled-arrow-up{
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+}
+.triangled-arrow-up::before,
+.triangled-arrow-up::after{
+  display: inline-block;
+  content: '';
+  height: 0px;
+  width: 0;
+  border-color: transparent;
+  border-top-width: .5em;
+  border-bottom-width: .5em;
+  border-left-width: .25em;
+  border-right-width: .25em;
+  border-style: solid;
+}
+.triangled-arrow-up::before{
+  border-right-color: currentColor;
+  transform-origin: top right;
+  transform: rotate(-25deg);
+
+}
+.triangled-arrow-up::after{
+  border-left-color: currentColor;
+  transform-origin: top left;
+  transform: rotate(25deg);
+}
+
+/* ===== arrow down ===== */
+.triangled-arrow-down{
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+}
+.triangled-arrow-down::before,
+.triangled-arrow-down::after{
+  display: inline-block;
+  content: '';
+  height: 0px;
+  width: 0;
+  border-color: transparent;
+  border-top-width: .5em;
+  border-bottom-width: .5em;
+  border-left-width: .25em;
+  border-right-width: .25em;
+  border-style: solid;
+}
+.triangled-arrow-down::before{
+  border-right-color: currentColor;
+  transform-origin: bottom right;
+  transform: rotate(25deg);
+
+}
+.triangled-arrow-down::after{
+  border-left-color: currentColor;
+  transform-origin: bottom left;
+  transform: rotate(-25deg);
+}
+/* ===== arrow left ===== */
+.triangled-arrow-left{
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+}
+.triangled-arrow-left::before,
+.triangled-arrow-left::after{
+  display: block;
+  content: '';
+  height: 0px;
+  width: 0;
+  border-color: transparent;
+  border-top-width: .25em;
+  border-bottom-width: .25em;
+  border-left-width: .5em;
+  border-right-width: .5em;
+  border-style: solid;
+}
+.triangled-arrow-left::before{
+  border-bottom-color: currentColor;
+  transform-origin: bottom left;
+  transform: rotate(25deg);
+
+}
+.triangled-arrow-left::after{
+  border-top-color: currentColor;
+  transform-origin: top left;
+  transform: rotate(-25deg);
+}
+
+/* ===== arrow right ===== */
+.triangled-arrow-right{
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+}
+.triangled-arrow-right::before,
+.triangled-arrow-right::after{
+  display: block;
+  content: '';
+  height: 0px;
+  width: 0;
+  border-color: transparent;
+  border-top-width: .25em;
+  border-bottom-width: .25em;
+  border-left-width: .5em;
+  border-right-width: .5em;
+  border-style: solid;
+}
+.triangled-arrow-right::before{
+  border-bottom-color: currentColor;
+  transform-origin: bottom right;
+  transform: rotate(-25deg);
+
+}
+.triangled-arrow-right::after{
+  border-top-color: currentColor;
+  transform-origin: top right;
+  transform: rotate(25deg);
+}

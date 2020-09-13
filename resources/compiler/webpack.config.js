@@ -79,20 +79,36 @@ module.exports = (options) => {
           extensions: 'js',
           includeSubfolders: true
         }),
-        new CleanWebpackPlugin([
-          path.resolve(outputFolder)
-        ], {
-          allowExternal: true,
-          beforeEmit: true
-        }),
+        // new CleanWebpackPlugin([
+        //   path.resolve(outputFolder)
+        // ], {
+        //   allowExternal: true,
+        //   beforeEmit: true
+        // }),
+        // new CopyWebpackPlugin([
+        //   {
+        //     from: path.resolve(`${context}/**/*`),
+        //     to: path.resolve(outputFolder),
+        //   }
+        // ], {
+        //   ignore: [ '*.js', '*.ts', '*.scss', '*.css' ]
+        // })
         new CopyWebpackPlugin([
           {
             from: path.resolve(`${context}/**/*`),
             to: path.resolve(outputFolder),
+            ignore: [ '*.js', '*.ts', '*.scss', '*.css' ]
+          },
+          {
+            context: 'static/',
+            from: path.resolve(`${context}/static/**/*`),
+            to: path.resolve(outputFolder),
+            force: true
+
           }
-        ], {
+        ]/*, {
           ignore: [ '*.js', '*.ts', '*.scss', '*.css' ]
-        })
+        }*/)
       ])
     ]
   }

@@ -1,0 +1,5 @@
+@import "media-mixin";
+
+@mixin bg-main-gradient($direction: to left){
+  background: linear-gradient($direction, #fe8c00, #f83600);
+}

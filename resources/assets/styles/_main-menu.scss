@@ -1,0 +1,23 @@
+.main-menu{
+  position: relative;
+  &::before,
+  &::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2.5px;
+    @include bg-main-gradient()
+  }
+  &::before{
+    top: 0;
+  }
+  &::after{
+    bottom: 0;
+  }
+
+  .nav-link,
+  .dropdown-item{
+    text-transform: uppercase;
+  }
+}

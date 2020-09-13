@@ -1,6 +1,10 @@
 @import "my-vars";
-@import "style";
+@import "my-mixins";
+@import "old/style";
+@import "old/woocommerce";
+@import "custom-styles";
 @import "bootstrap";
 @import "my-utilities";
 @import "header";
-
+@import "searchform";
+@import "main-menu";

@@ -1,0 +1,27 @@
+.form-search{
+  position: relative;
+  justify-content: flex-end;
+  width: auto;
+  max-width: 100%;
+  @include media(sm){
+    width: 400px;
+  }
+}
+.form-search__btn{
+  position: absolute;
+  right: 0;
+  padding-left: .6rem;
+  padding-right: .6rem;
+
+}
+.form-search__input{
+  padding-right: 40px;
+  max-width: 120px;
+  width: 120px;
+  transition: .3s all;
+}
+.form-search__input:focus{
+  max-width: 100%;
+  width: 100%;
+  padding-right: 60px;
+}

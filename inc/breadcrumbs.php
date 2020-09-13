@@ -1,8 +1,8 @@
 <?php
 /**
- * Understrap breadcrumbs from: https://github.com/bchavdarov/breadcrumbs
+ * goldphoenix breadcrumbs from: https://github.com/bchavdarov/breadcrumbs
  *
- * @package understrap
+ * @package goldphoenix
  */
 
 if (!defined('ABSPATH')) {

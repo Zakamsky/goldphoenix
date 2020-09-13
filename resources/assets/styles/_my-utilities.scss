@@ -1,3 +1,6 @@
-.bg-maine-gradient{
-  background: linear-gradient(to right, #fe8c00, #f83600);
+.bg-main-gradient-to-right{
+  @include bg-main-gradient($direction: to right);
+}
+.bg-main-gradient-to-left{
+  @include  bg-main-gradient()
 }

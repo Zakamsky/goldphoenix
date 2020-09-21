@@ -21,9 +21,11 @@ get_header();
                 <div class="col">
                     <?php woocommerce_content(); ?>
                 </div>
-                <div class="col-3 d-none d-lg-block order-first">
-                    <?php get_sidebar('shop'); ?>
-                </div>
+                <?php if ( !is_product() ) :?>
+                    <div class="col-3 d-none d-lg-block order-first">
+                        <?php get_sidebar('shop'); ?>
+                    </div>
+                <?php endif; ?>
             </div><!--.row-->
         </div><!--.container-->
 

@@ -50,11 +50,11 @@
                         <?php
                         if ( is_front_page() && is_home() ) :
                             ?>
-                            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="text-primary"><?php bloginfo( 'name' ); ?></a></h1>
+                            <h1 class="site-title display-3"><a class="text-primary text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
                         <?php
                         else :
                             ?>
-                            <p class="site-title h1"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+                            <p class="site-title display-3"><a class="text-primary text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
                         <?php
                         endif;
                         $goldphoenix_description = get_bloginfo( 'description', 'display' );

@@ -4,16 +4,23 @@
 @import "utilities/my-mixins";
 @import "utilities/media-mixin";
 @import "utilities/material-bx-shadows";
+
 // old and other styles
 @import "old/style";
 @import "old/woocommerce";
 @import "bootstrap";
+
 // custom utilities
 @import "utilities/my-utilities";
 @import "utilities/arrows";
+
 // plugin customize
 @import "plugin-customize/woo-fly-cart";
 @import "plugin-customize/woocommerce";
+
+//general customization
+@import "widgets-general";
+
 // block styles
 @import "header";
 @import "searchform";

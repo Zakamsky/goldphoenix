@@ -17,7 +17,7 @@ function goldphoenix_widgets_init() {
             'description'   => esc_html__( 'Add widgets here.', 'goldphoenix' ),
             'before_widget' => '<section id="%1$s" class="widget %2$s">',
             'after_widget'  => '</section>',
-            'before_title'  => '<h2 class="widget-title">',
+            'before_title'  => '<h2 class="widget-title h4">',
             'after_title'   => '</h2>',
         )
     );
@@ -29,7 +29,7 @@ function goldphoenix_widgets_init() {
             'description'   => esc_html__( 'Add widgets here.', 'goldphoenix' ),
             'before_widget' => '<section id="%1$s" class="widget %2$s">',
             'after_widget'  => '</section>',
-            'before_title'  => '<h2 class="widget-title">',
+            'before_title'  => '<h2 class="widget-title h4">',
             'after_title'   => '</h2>',
         )
     );
@@ -41,8 +41,8 @@ function goldphoenix_widgets_init() {
             'description'   => esc_html__( 'Add widgets here.', 'firstbyte' ),
             'before_widget' => '<section id="%1$s" class="widget footer-widget %2$s">',
             'after_widget'  => '</section>',
-            'before_title'  => '<h4 class="widget-title">',
-            'after_title'   => '</h4>',
+            'before_title'  => '<h2 class="widget-title h4">',
+            'after_title'   => '</h2>',
         )
     );
 
@@ -53,8 +53,8 @@ function goldphoenix_widgets_init() {
             'description'   => esc_html__( 'Add widgets here.', 'firstbyte' ),
             'before_widget' => '<section id="%1$s" class="widget footer-widget %2$s">',
             'after_widget'  => '</section>',
-            'before_title'  => '<h4 class="widget-title">',
-            'after_title'   => '</h4>',
+            'before_title'  => '<h2 class="widget-title h4">',
+            'after_title'   => '</h2>',
         )
     );
 
@@ -65,8 +65,8 @@ function goldphoenix_widgets_init() {
             'description'   => esc_html__( 'Add widgets here.', 'firstbyte' ),
             'before_widget' => '<section id="%1$s" class="widget footer-widget %2$s">',
             'after_widget'  => '</section>',
-            'before_title'  => '<h4 class="widget-title">',
-            'after_title'   => '</h4>',
+            'before_title'  => '<h2 class="widget-title h4">',
+            'after_title'   => '</h2>',
         )
     );
 }

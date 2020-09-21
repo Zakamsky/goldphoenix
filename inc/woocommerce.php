@@ -40,7 +40,7 @@ add_action( 'woocommerce_after_main_content', 'goldphoenix_woocommerce_wrapper_e
 if ( ! function_exists( 'goldphoenix_woocommerce_wrapper_start' ) ) {
 	function goldphoenix_woocommerce_wrapper_start() {
 		$container = get_theme_mod( 'goldphoenix_container_type' );
-		echo '<div class="wrapper" id="woocommerce-wrapper">';
+		echo '<div class="container" id="woocommerce-wrapper">';
 		echo '<div class="' . esc_attr( $container ) . '" id="content" tabindex="-1">';
 		echo '<div class="row">';
 		get_template_part( 'global-templates/left-sidebar-check' );
@@ -161,3 +161,4 @@ if ( ! is_admin() && ! function_exists( 'wc_review_ratings_enabled' ) ) {
 		return wc_reviews_enabled() && 'yes' === get_option( 'woocommerce_enable_review_rating' );
 	}
 }
+

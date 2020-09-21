@@ -1,0 +1,36 @@
+.woofc-count{
+  border-radius: 50%;
+  @include BoxShadow(8);
+}
+
+.woofc-count i{
+  line-height: 66px;
+  color: $primary;
+}
+
+.woofc-count.woofc-count-top-right{
+  top: .7rem;
+  right: .7rem;
+}
+
+.woofc-count.woofc-count-top-right:hover {
+  top: 1.2rem;
+}
+
+.woofc-area.woofc-style-02 .woofc-area-top{
+  background-color: rgba($my-orange-lightest, .6);
+}
+.woofc-area.woofc-style-02 .woofc-area-mid .woofc-item .woofc-item-inner .woofc-item-qty .woofc-item-qty-inner input{
+  background-color: rgba($my-orange-lightest, .4);
+}
+.woofc-area.woofc-style-02 .woofc-area-mid .woofc-item .woofc-item-inner .woofc-item-qty .woofc-item-qty-inner .woofc-item-qty-plus, .woofc-area.woofc-style-02 .woofc-area-mid .woofc-item .woofc-item-inner .woofc-item-qty .woofc-item-qty-inner .woofc-item-qty-minus, .woofc-area.woofc-style-02 .woofc-area-mid .woofc-item .woofc-item-inner .woofc-item-qty .woofc-item-qty-inner .woofc-item-qty-individual{
+  background-color: rgba($my-orange-lightest, .4);
+}
+.woofc-area.woofc-style-02 .woofc-area-mid .woofc-item .woofc-item-inner .woofc-item-qty .woofc-item-qty-inner .woofc-item-qty-plus:hover, .woofc-area.woofc-style-02 .woofc-area-mid .woofc-item .woofc-item-inner .woofc-item-qty .woofc-item-qty-inner .woofc-item-qty-minus:hover, .woofc-area.woofc-style-02 .woofc-area-mid .woofc-item .woofc-item-inner .woofc-item-qty .woofc-item-qty-inner .woofc-item-qty-individual:hover{
+  background-color: rgba($my-orange-lightest, .8);
+
+}
+.woofc-area.woofc-area-show .woofc-area-bot .woofc-action .woofc-action-inner .woofc-action-left>a,
+.woofc-area.woofc-area-show .woofc-area-bot .woofc-action .woofc-action-inner .woofc-action-right>a{
+  border-radius: 3em;
+}

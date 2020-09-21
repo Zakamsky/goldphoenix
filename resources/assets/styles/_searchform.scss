@@ -1,7 +1,8 @@
 .form-search{
   position: relative;
+  //display: block;
   justify-content: flex-end;
-  width: auto;
+  //width: auto;
   max-width: 100%;
   @include media(sm){
     width: 400px;
@@ -17,13 +18,25 @@
   }
 }
 .form-search__input{
+  box-sizing: border-box;
   padding-right: 40px;
-  max-width: 120px;
-  width: 120px;
+  width: 100%;
   transition: .3s all;
 }
 .form-search__input:focus{
-  max-width: 100%;
-  width: 100%;
   padding-right: 60px;
+}
+
+.top-bar{
+  .form-search__input{
+    padding-right: 40px;
+    max-width: 120px;
+    width: 120px;
+    transition: .3s all;
+  }
+  .form-search__input:focus{
+    max-width: 100%;
+    width: 100%;
+    padding-right: 60px;
+  }
 }

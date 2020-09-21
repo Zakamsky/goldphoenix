@@ -21,13 +21,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
-<form role="search" method="get" class="woocommerce-product-search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-	<div class="input-group">
+<form role="search" method="get" class="form-search form-inline" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+
 		<label class="sr-only" for="woocommerce-product-search-field-<?php echo isset( $index ) ? absint( $index ) : 0; ?>"><?php esc_html_e( 'Search for:', 'goldphoenix' ); ?></label>
-		<input type="search" id="woocommerce-product-search-field-<?php echo isset( $index ) ? absint( $index ) : 0; ?>" class="search-field field form-control" placeholder="<?php echo esc_attr__( 'Search products&hellip;', 'goldphoenix' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
+		<input type="search" id="woocommerce-product-search-field-<?php echo isset( $index ) ? absint( $index ) : 0; ?>" class="search-field field form-search__input form-control" placeholder="<?php echo esc_attr__( 'Search products&hellip;', 'goldphoenix' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
 		<input type="hidden" name="post_type" value="product" />
-		<span class="input-group-append">
-			<button class="submit btn btn-primary" type="submit" value="<?php echo esc_attr_x( 'Search', 'submit button', 'goldphoenix' ); ?>"><?php echo esc_html_x( 'Search', 'submit button', 'goldphoenix' ); ?></button>
-		</span>
-	</div>
+
+			<button class="form-search__btn btn btn-outline-primary" type="submit" value="<?php echo esc_attr_x( 'Search', 'submit button', 'goldphoenix' ); ?>">
+                <span class="dashicons dashicons-search"></span>
+                <span class="sr-only">Поиск</span>
+            </button>
+
+
 </form>

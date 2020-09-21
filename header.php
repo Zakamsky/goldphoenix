@@ -63,6 +63,7 @@
                             <p class="site-description h3"><?php echo $goldphoenix_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
                         <?php endif; ?>
                     </div>
+
                 </div>
 
             </div>

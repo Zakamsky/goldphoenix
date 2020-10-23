@@ -22,10 +22,10 @@ do_action( 'woocommerce_before_lost_password_form' );
 
 <form method="post" class="woocommerce-ResetPassword lost_reset_password">
 
-	<p><?php echo apply_filters( 'woocommerce_lost_password_message', esc_html__( 'Lost your password? Please enter your username or email address. You will receive a link to create a new password via email.', 'goldphoenix' ) ); ?></p><?php // @codingStandardsIgnoreLine ?>
+	<p><?php echo apply_filters( 'woocommerce_lost_password_message', esc_html__( 'Забыли свой пароль? Укажите свой Email или имя пользователя. Ссылку на создание нового ��ароля вы получите по электронной почте.', 'goldphoenix' ) ); ?></p><?php // @codingStandardsIgnoreLine ?>
 
 	<p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
-		<label for="user_login"><?php esc_html_e( 'Username or email', 'goldphoenix' ); ?></label>
+		<label for="user_login"><?php esc_html_e( 'Имя пользователя или электронная почта', 'goldphoenix' ); ?></label>
 		<input class="woocommerce-Input woocommerce-Input--text input-text form-control" type="text" name="user_login" id="user_login" autocomplete="username" />
 	</p>
 
@@ -35,7 +35,7 @@ do_action( 'woocommerce_before_lost_password_form' );
 
 	<p class="woocommerce-form-row form-row">
 		<input type="hidden" name="wc_reset_password" value="true" />
-		<button type="submit" class="btn btn-outline-primary" value="<?php esc_attr_e( 'Reset password', 'goldphoenix' ); ?>"><?php esc_html_e( 'Reset password', 'goldphoenix' ); ?></button>
+		<button type="submit" class="btn btn-outline-primary" value="<?php esc_attr_e( 'Сбросить пароль', 'goldphoenix' ); ?>"><?php esc_html_e( 'Сбросить пароль', 'goldphoenix' ); ?></button>
 	</p>
 
 	<?php wp_nonce_field( 'lost_password', 'woocommerce-lost-password-nonce' ); ?>

@@ -1,8 +1,6 @@
 .form-search{
   position: relative;
-  //display: block;
   justify-content: flex-end;
-  //width: auto;
   max-width: 100%;
   @include media(sm){
     width: 400px;
@@ -39,4 +37,8 @@
     width: 100%;
     padding-right: 60px;
   }
+}
+.search .form-control.form-search__input,
+.widget-area .form-control.form-search__input{
+  width: 100%;
 }

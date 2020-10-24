@@ -30,6 +30,9 @@ if ( ! function_exists( 'goldphoenix_setup' ) ) :
          */
         add_theme_support( 'post-thumbnails' );
 
+        //styles for gutenberg
+        add_theme_support( 'wp-block-styles' );
+
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus(
             array(

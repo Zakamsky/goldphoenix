@@ -162,4 +162,34 @@ if ( ! is_admin() && ! function_exists( 'wc_review_ratings_enabled' ) ) {
 	}
 }
 
+// Отделяем категории от товаров
+function separate_product_subcategories( $args = array() ) {
 
+    $parentid = get_queried_object_id();
+
+    $args = array(
+        'parent' => $parentid
+    );
+
+    $terms = get_terms( 'product_cat', $args );
+
+    if ( $terms ) {
+
+        echo '<hr class="clear-both my-2"/><h2 class=" mt-3">Категории</h2><ul class="categories-list products columns-3">';
+
+        foreach ( $terms as $term ) {
+
+            echo '<li class="product-category product">';
+            echo '<a href="' . esc_url( get_term_link( $term ) ) . '" class="' . $term->slug . '">';
+            woocommerce_subcategory_thumbnail( $term );
+
+            echo '<h3 class="woocommerce-loop-category__title">'.$term->name.' <mark class="count">('.$term->count.')</mark></h3>';
+            echo '</a>';
+        }
+
+        echo '</ul> <hr/> <p class="h2">Товары</p>';
+
+    }
+
+}
+add_action( 'woocommerce_before_shop_loop', 'separate_product_subcategories', 50 );

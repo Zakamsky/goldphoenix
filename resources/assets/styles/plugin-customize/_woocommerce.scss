@@ -167,7 +167,8 @@
 }
 
 //catalog page
-.woocommerce-page.woocommerce{
+.woocommerce{
+//.woocommerce-page.woocommerce{
   ul.products, .woocommerce ul.products{
     display: flex;
     flex-wrap: wrap;
@@ -190,6 +191,15 @@
 
     &:hover{
       @include BoxShadow(8);
+    }
+    .onsale{
+      top: 1.6rem;
+      right: .6rem;
+      color: $my-orangered;
+      border: 2px solid $my-orangered;
+      //border-radius: $btn-border-radius;
+      background-color: transparent;
+      transform: rotate(40deg);
     }
   }
   @include media(lg){

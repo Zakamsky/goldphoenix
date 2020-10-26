@@ -162,7 +162,7 @@ if ( ! is_admin() && ! function_exists( 'wc_review_ratings_enabled' ) ) {
 	}
 }
 
-// Отделяем категории от товаров
+// Отделяем категории от товаров (точнее это отдельный вывод категорий до вывода товаров, независимый от настроек магазина)
 function separate_product_subcategories( $args = array() ) {
 
     $parentid = get_queried_object_id();

@@ -13,6 +13,10 @@
   .star-rating span::before{
     color: $secondary;
   }
+  #respond input#submit.alt,
+  a.button.alt,
+  button.button.alt,
+  input.button.alt,
   #respond input#submit, a.button, button.button, input.button{
     height: 40px;
     line-height: 36px;
@@ -160,4 +164,74 @@
 .select2-container--default .select2-results__option--highlighted[aria-selected], .select2-container--default .select2-results__option--highlighted[data-selected] {
   background-color: $my-orange-darkest;
   color: #fff;
+}
+
+//catalog page
+.woocommerce-page.woocommerce{
+  ul.products, .woocommerce ul.products{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px;
+  }
+
+   ul.products li.product, .woocommerce-page ul.products li.product{
+    display: flex;
+    flex-direction: column;
+    width: calc( (100% - 16px * 2) / 2 );// !important;
+    margin: 8px; // !important;
+    padding: .6rem;
+    border-radius: $border-radius;
+    @include BoxShadow(3);
+    transition: .3s all;
+    @include media(md){
+      width: calc( (100% - 16px * 3) / 3 ); // !important;
+      padding: 1rem;
+    }
+
+    &:hover{
+      @include BoxShadow(8);
+    }
+  }
+  @include media(lg){
+    ul.products.columns-4 li.product{
+      width: calc( (100% - 16px * 4) / 4 );
+    }
+  }
+
+  .woocommerce-LoopProduct-link{
+    flex-grow: 1;
+  }
+  .woocommerce-LoopProduct-link img{
+    object-fit: contain;
+    max-height: 227px;
+  }
+
+  //product page
+  &.single-product{
+    form.cart{
+      display: flex;
+    }
+    .cart .quantity{
+      margin: 0 -1rem 0 0 !important;
+      padding-right: 1rem;
+      border-radius: 3em 0 0 3em;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 2px solid #ced4da;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      &:focus-within{
+        background-color: #fff;
+        border-color: #ff9679;
+        outline: 0;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 0 0.2rem rgba(248,54,0,.25);
+      }
+    }
+    .input-text.qty{
+      height: 100%;
+      border: none;
+      border-radius: 3em 0 0 3em;
+      outline: 0 !important;
+    }
+  }
 }

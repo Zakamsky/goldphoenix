@@ -17,7 +17,7 @@ $goldphoenix_includes = array(
     '/jetpack.php',                         // Load Jetpack compatibility file.
     '/class-wp-bootstrap-navwalker.php',    // Load custom WordPress nav walker. Trying to get deeper navigation? Check out: https://github.com/goldphoenix/goldphoenix/issues/567
     '/breadcrumbs.php', 					// Load custom breadcrumbs
-    '/acf-blocks.php', 					// Load custom ACF bocks for Gutenberg
+    '/acf-functions.php', 					// Load custom ACF bocks for Gutenberg
     '/woocommerce.php',                     // Load WooCommerce functions.
 
 );

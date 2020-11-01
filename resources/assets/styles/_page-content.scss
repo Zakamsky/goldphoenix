@@ -4,3 +4,32 @@
     margin-bottom: 2rem;
   }
 }
+
+.comment-form .submit{
+  height: 40px;
+  line-height: 36px;
+  text-align: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: $link-color;
+  font-weight: 700;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $link-color;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
+  border-radius: 3em;
+  transition: all 0.5s;
+  &:hover{
+    background-color: $link-color;
+    color: #fff;
+  }
+}
+
+.wp-block-quote{
+  border-left: 4px solid $my-orange-lighter;
+  border-left: 4px solid lighten($my-orange-lighter, 15);
+}

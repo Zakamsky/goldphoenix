@@ -78,7 +78,7 @@ if ( ! function_exists( 'goldphoenix_entry_footer' ) ) :
 		}
 
 		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-			echo '<span class="comments-link">';
+			echo '<span class="comments-link ml-2">';
 			comments_popup_link(
 				sprintf(
 					wp_kses(
@@ -109,7 +109,7 @@ if ( ! function_exists( 'goldphoenix_entry_footer' ) ) :
 				),
 				wp_kses_post( get_the_title() )
 			),
-			'<span class="edit-link">',
+			'<span class="edit-link ml-auto">',
 			'</span>'
 		);
 	}
@@ -133,6 +133,23 @@ if ( ! function_exists( 'goldphoenix_post_thumbnail' ) ) :
 			<div class="post-thumbnail">
 				<?php the_post_thumbnail(); ?>
 			</div><!-- .post-thumbnail -->
+
+		<?php elseif ( is_search() ) : ?>
+
+            <a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+                <?php
+                the_post_thumbnail(
+                    'thumbnail',
+                    array(
+                        'alt' => the_title_attribute(
+                            array(
+                                'echo' => false,
+                            )
+                        ),
+                    )
+                );
+                ?>
+            </a>
 
 		<?php else : ?>
 

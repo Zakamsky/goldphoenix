@@ -9,6 +9,12 @@
  * @package
  */
 
+$email = get_field( 'email', 'option' );
+$phone = get_field( 'tel', 'option' );
+$pattern = "/[^0-9]/";
+$replacement = "";
+$phone_num = preg_replace($pattern, $replacement, $phone);
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -29,9 +35,18 @@
 	<header id="site-header" class="site-header">
         <div class="navbar top-bar navbar-light bg-main-gradient-to-left">
             <div class="container d-flex">
-                <p class="h6 p-1 m-0">
-                    <a href="#!" class="text-light">
-                        +7 987 65 43 210
+                <p class="h6 m-0">
+                    <a href="tel:<?=$phone_num; ?>" class="text-light">
+                        <svg width="1em" height="1em" class="svg-icon-inline">
+                            <use xlink:href="#icon-mobile"></use>
+                        </svg>
+                        <?=$phone; ?>
+                    </a>
+                    <a href="mailto:<?=$email; ?>" class="text-light ml-3">
+                        <svg width="1em" height="1em" class="svg-icon-inline">
+                            <use xlink:href="#icon-email"></use>
+                        </svg>
+                        <?=$email; ?>
                     </a>
                 </p>
                 <div class="p-1 ml-auto">
@@ -76,8 +91,8 @@
 
             <div class="container">
 
-                <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-                    <span class="navbar-toggler-icon"></span> <span class="navbar-toggler__text">Меню</span>
+                <button class="navbar-toggler mx-auto btn btn-link text-primary" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+                    <span class="navbar-toggler-icon"></span> <span class="navbar-toggler__text ">Меню</span>
                 </button>
 
                 <!-- The WordPress Menu goes here -->

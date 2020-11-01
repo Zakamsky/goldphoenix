@@ -17,7 +17,7 @@
 		<div class="entry-meta">
 			<?php
 			goldphoenix_posted_on();
-			goldphoenix_posted_by();
+//			goldphoenix_posted_by();
 			?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>

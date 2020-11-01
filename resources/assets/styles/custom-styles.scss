@@ -1,8 +1,20 @@
+.custom-logo-link{
+  max-width: 250px;
+}
 .site-main{
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
+.svg-icon-inline{
+  display: inline-block;
+  line-height: 19;
+  vertical-align: baseline;
+}
+
+.main-menu .navbar-nav{
+  width: 100%;
+}
 textarea.form-control,
 .comment-form-comment textarea{
 
@@ -25,4 +37,95 @@ textarea.form-control,
 }
 .comment-form-comment textarea{
   width: 100%;
+}
+
+.attachment-post-thumbnail{
+  float: right;
+  margin-bottom: 1.5rem;
+}
+.entry-footer {
+  clear: both;
+}
+
+.post-navigation .nav-links{
+  justify-content: space-between;
+}
+.comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
+  flex: 0 0 auto;
+}
+.post-navigation  .nav-subtitle{
+  color: #212529
+}
+
+/*sendpuls form popup*/
+.sp-form-outer{
+  top: unset !important;
+  @include BoxShadow(24);
+}
+.sp-form-popup{
+  margin: 0 !important;
+}
+
+//search page
+
+.search{
+  .entry-footer{
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  .post-thumbnail{
+    float: left;
+    margin: 1rem;
+  }
+  .entry-header{
+    clear: both;
+    margin-top: 1.7rem;
+  }
+}
+
+//menu burger
+//.navbar-toggler__text{
+//  color:
+//}
+.navbar-toggler{
+  display: flex;
+  align-items: center;
+}
+.navbar-toggler-icon{
+  position: relative;
+  margin-right: 3px;
+  &::before,
+  &::after{
+    content: '';
+    position: absolute;
+    display: block;
+    left: 4px;
+    right: 4px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 2px;
+    transition: all .3s ease-in-out;
+  }
+  &::before{
+    top: 6px;
+    box-shadow: 0 8px 0 0;
+  }
+  &::after{
+    bottom: 6px;
+  }
+  [aria-expanded="true"]>&{
+    &::before,
+    &::after{
+      top: calc(50% - 1px);
+      bottom: unset;
+    }
+    &::before{
+      box-shadow: none;
+      transform: rotate(45deg);
+    }
+    &::after{
+      transform: rotate(-45deg);
+    }
+  }
+
 }
